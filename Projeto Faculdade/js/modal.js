@@ -13,10 +13,6 @@ const VerificarEstadoModal = () => {
     imgCarrinho = troca;
 }
 
-const TrocaImg = () => {
-    
-}
-
 [OpenModal, Fade].forEach((el) => {
     el.addEventListener("click", () => VerificarEstadoModal());
 });

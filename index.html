@@ -28,23 +28,36 @@
             <!--logo-->
             <div class="logo"></div>
             <!-- area login e favorito -->
+
             <div id="container-login-favorito">
-                <div onmouseover="showDropdown()" onmouseout="hideDropdown()" style="display: block;">
-                    <img src="img/UserOutline.png" alt="icon login" class="icon-login">
-                    <img src="img/ChevronDownOutline.png" alt="icon-seta-down" class="icon-seta-down">             
-                </div>
-                <div class="dropdown" id="dropdown" onmouseover="showDropdown()" onmouseout="hideDropdown()">
+
+                <img src="img/Vector.png" alt="icon vetor"> 
+
+                <div class="perfil">
+                    <div class="imgLog">
+                        <img src="img/UserOutline.png" alt="" class="icon-login">
+                    </div>                  
+               </div>  
+
+               <img src="img/ChevronDownOutline.png" alt="" class="icon-seta-down">  
+
+               <div class="menu">
+                 <ul>
                     <div class="triangle"></div>
-                    <ul>
-                        <li class="option-pedido"><a href="dadosPedido/index.html">MEUS PEDIDOS</a></li>
-                        <li class="option-login"><a href="login/login.html">MINHA CONTA</a></li>
-                        <li class="option-cadastrar"> <a class="txt-cadastrar" href="#">CADASTRE-SE</a> </li>
-                    </ul>
-                </div>
-                <img src="img/Vector.png" alt="icon vetor" style="margin-top:15px; margin-left: -20px; ">
+                    <li>
+                        <a href="login/login.html">MINHA CONTA</a>
+                    </li>
+                    <li>
+                        <a href="dadosPedido/index.html">MEUS PEDIDOS</a>
+                    </li>
+                    <li class="option-cadastrar">
+                        <a class="cadastro" href="cadastro/index.html">CADASTRE-SE</a>
+                    </li>
+                 </ul>
+               </div> 
+
             </div>
         </div>
-        
     </header>
      <!-- menu -->
          <nav>
@@ -67,6 +80,55 @@
         <img src="img/desconto.png" alt="desconto"/>
         <img src="img/receba_mesmo_dia.png" alt="receba"/>
       </div>
+
+          <!-- area container camisetas-->
+          <div class="container-calca">
+
+            <!-- Seção com cards -->
+            <section class="opcoes-calca" id="calca">
+                <div class="calca-div">     
+
+                    <!-- Card 1-->
+                    <div class="card">
+                        <img src="img/calca1.png" alt="Pants">
+                        <div class="card-bottom">
+                           <h2>Calça 1</h2>
+                           <p>Descrição das calças 1</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <img src="img/calca2.png" alt="Pants">
+                        <div class="card-bottom">
+                           <h2>Calça 2</h2>
+                           <p>Descrição das calças 1</p>
+                        </div>
+                    </div>
+
+                   <!-- Card 3-->
+                    <div class="card">
+                        <img src="img/calca3.png" alt="Pants">
+                        <div class="card-bottom">
+                           <h2>Calça 1</h2>
+                           <p>Descrição das calças 1</p>
+                        </div>
+                    </div>
+
+                       <!-- Card 4 -->
+                       <div class="card">
+                        <img src="img/calca4.png" alt="Pants">
+                        <div class="card-bottom">
+                           <h2>Calça 2</h2>
+                           <p>Descrição das calças 1</p>
+                        </div>
+                    </div>      
+                </div>
+            </section>
+
+          </div>
+          <!-- fim area container camisetas-->
+
       <!-- area carrinho -->
       <div id="carrinho">
         <img id="img-carrinho" src="img/shopping-cart.png" alt="carrinho">
@@ -78,6 +140,7 @@
         <div class="item-carrinho"></div>
       </div>
       <!-- fim area carrinho -->
+
   <footer>
     <div id="container-formas-pagamento">
         <h3>FORMAS DE PAGAMENTO</h3>

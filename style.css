@@ -10,10 +10,6 @@
 
 a{
     text-decoration: none;
-    color: #333;
-    font-family: 'Open Sans',sans-serif;
-    font-size: 12px;
-    font-weight: bold;
 }
 
 /* Inicio da Pagino */
@@ -406,89 +402,143 @@ textarea{
     color: #fff;
 } 
 
-/* Parte do Modal de Login */
-.icon-login {
-    display: block;
-    margin-top: 15px;
+/* Parte Modal Login*/
+
+.imgLog {
+    position: relative;
+    margin-left: 50px;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.perfil .imgLog img {
+    position: absolute;
+    object-fit: cover;
 }
 
 .icon-seta-down {
-    margin-left:50px;
-    display: block; 
-    margin-top: -25px;
+   margin-top: 10px;
 }
 
-.dropdown {
-    display: none;
+.menu {
+    margin-top: 200px;
+    margin-left: -37px;
+    margin-top: 170px;
+    top: calc(100% + 30px);
+    right: 0;
     width: 200px;
-    height: 100px;
-    margin-left: -80px;
-    margin-top: 160px;
-    background: #fff;
-    padding: 10px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    transition: all 200ms;
-    border: 1px solid #f0f0f0;
-    top: 50px;
-    z-index: 999;
+    min-height: 100px;
+    user-select: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    z-index: 100;
 }
 
-.option-pedido {
-    margin-top: 15px;
-    text-align: center;
-    line-height: 20px;
-  }
+.menu.ativo {
+    opacity: 1;
+    visibility: visible;
+}
 
-  .option-login {
-    text-align: center;
-   }
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    list-style: none;
+}
 
-   .option-cadastrar {
-    margin-top: 5px;
-    line-height: 1.5;
-    text-align: center;
-    background-color: black;
-    height: 27px;
-    border-radius: 3px;
-   }
+.menu ul li {
+    padding: 15px 20px;
+    background: whitesmoke;
+    transition: .5s;
+}
 
-   a.txt-cadastrar{
-    text-decoration: none;
-    color: #fff;
+/* Animação ao passar o mouse nas opções */
+.menu ul li:hover {
+    background: gray;
+    transition: 0s;
+}
+
+.menu ul li a {
     font-family: 'Open Sans',sans-serif;
     font-size: 12px;
     font-weight: bold;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+  
+.menu .cadastro {
+    color: white;
+}
+
+  .triangle {
+    margin-left: 15px;
+     width: 0;
+     height: 0;
+     border-left: 10px solid transparent;
+     border-right: 10px solid transparent;
+     border-bottom: 10px solid #f5f5f5ff;
    }
 
-.dropdown.active {
-    display: block;
+  .menu .option-cadastrar {
+    line-height: 1.5;
+    text-align: center;
+    background-color: black;
 }
 
-.triangle {
-    margin-top: -20px;
-    margin-left: 43px;
-    top: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid #ececec;
-    animation: fadeIn 0.3s ease-in-out;
+/* Final Parte Modal Login*/
+
+/* container camisetas */
+
+#container-camisetas {
+    height: 500px;
+    width: 608px;
+    padding: 20px;
 }
 
-@keyframes fadeIn {
-    0% {
-      opacity: 0;
-      transform: translateX(-50%) translateY(-10px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(-50%) translateY(0);
-    }
-  }
+.opcoes-calca {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    margin: 100px;
+}
 
-  /* Final Modal Login */
+.calca-div {
+    display: flex;
+    justify-content: left;
+    padding: 50px;
+}
 
+.card {
+    width: 200px;
+    height: 400px;
+    margin: 40px;
+    position: relative;
+    border-radius: 20px;
+    z-index: 100;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   }
 
+   .card:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+   
+   .card img {
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+   }
+   
+   .card .card-bottom {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: white;
+    height: 20%;
+    text-align: left;
+    vertical-align: bottom;
+   }

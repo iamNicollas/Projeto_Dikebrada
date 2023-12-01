@@ -1,9 +1,6 @@
-const dropdown = document.getElementById('dropdown');
+const perfil = document.querySelector('.perfil');
+const menu = document.querySelector('.menu');
 
-function showDropdown() {
-  dropdown.classList.add('active');
-}
-
-function hideDropdown() {
-  dropdown.classList.remove('active');
-}
+perfil.onclick = () => {
+  menu.classList.toggle('ativo');
+};

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Login</title>
+    <title>Autentificação</title>
 </head>
 <body>
     <header>
@@ -40,20 +40,21 @@
         <h1>LOGIN</h1>
         <div class="linha"></div>
         <p class="txt-login">
-            Faça login na sua conta para começar as suas compras e  participar das principais ofertas da loja.
+            Autenticação de dois fatores, enviamos um código para o seu e-mail de 6 números, por favor insira o código para fazer login na sua conta.
         </p>
-        <div class="container-icone">
-            <img src="../img/email.png" alt="">
-            <input type="text" class="container-input-duvida" placeholder="Informe seu e-mail">
+        <div id="container-codigo-verificacao">
+            <input type="text" placeholder="0" maxlength="1" class="codigo"/>
+            <input type="text" placeholder="0" maxlength="1" class="codigo"/>
+            <input type="text" placeholder="0" maxlength="1" class="codigo"/>
+            <input type="text" placeholder="0" maxlength="1" class="codigo"/>
+            <input type="text" placeholder="0" maxlength="1" class="codigo"/>
+            <input type="text" placeholder="0" maxlength="1" class="codigo"/>
         </div>
-        <div class="container-icone">
-            <img src="../img/lock.png" alt="">
-            <input type="password" class="container-input-duvida" placeholder="Informe a sua senha">
-        </div>
+        <p class="txt-senha"><a>REENVIAR CÓDIGO NOVAMENTE <b style="color: crimson;">30s</b></a></p> 
         <div id="btn-login">
-            LOGIN
+            CONFIRMAR
         </div>
-        <p class="txt-senha"><a>Esqueci a senha?</a></p> 
+        
       </div>
       
       <!-- fim area de login -->

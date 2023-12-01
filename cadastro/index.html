@@ -8,7 +8,8 @@
 <body>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>História Di Kebrada</title>
+    <script src="../js/cadastro.js" defer></script>
+    <title>História Di Kebrada</title>  
 </head>
 <body>
     <header>
@@ -43,17 +44,25 @@
       <div id="container-area-login">
         <h1>Cadastro</h1>
         <div class="linha"></div>
-        <p class="txt-login">
+        <p class="txt-cadastro">
             Selecione o tipo de cadastro que deseja fazer, para começar a comprar. 
-        </p>       
-        <!-- Rounded switch -->
-        <label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-        </label>
+        </p>
+        <div id="container-pf-pj">
+            <!-- Rounded switch -->
+            <p>Pessoa Física</p>
+            <label class="switch">
+                <input id="myCheckbox" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <p>Pessoa Jurídica</p>
+        </div>       
         <div id="container-conteudo">
             
             <div id="contener-dados-cadastrais">
+            <div class="container-icone">
+                <img src="../img/file-text.png" alt="">
+                <input type="switch" id="cpf" class="container-input-duvida" placeholder="Informe seu CPF">
+            </div>
             <div class="container-icone">
                 <img src="../img/UserOutline.png" alt="">
                 <input type="switch" class="container-input-duvida" placeholder="Informe seu nome">
@@ -70,7 +79,7 @@
                 <img src="../img/phone.png" alt="">
                 <input type="text" class="container-input-duvida" placeholder="Informe seu número ">
             </div>
-            <div class="container-icone">
+            <div class="container-icone" style="width: 260px;">
                 <img src="../img/calendar.png" alt="">
                 <input type="date" class="container-input-duvida" placeholder="Data de nascimento ">
             </div>
@@ -78,40 +87,34 @@
             
             <div id="container-endereço">
             <div class="container-icone">
-                
                 <input type="text" class="container-input-duvida" placeholder="CEP ">
             </div>
             <div class="container-icone">
-                
                 <input type="text" class="container-input-duvida" placeholder="RUA ">
             </div>
-            <div class="container-icone">
-                
+            <div class="container-icone" style="width: 260px;">
                 <input type="text" class="container-input-duvida" placeholder="BAIRRO ">
-            </div>
-            <div class="container-icone">
-            
+            </div>        
+            <div class="container-icone" style="width: 260px;">
                 <input type="text" class="container-input-duvida" placeholder="NÚMERO ">
             </div>
-            <div class="container-icone">
-                
-                <input type="text" class="container-input-duvida" placeholder="CIDADE " id="cidade"> 
+            <div style="display: flex; flex-direction: row;">
+                <div class="container-icone">
+                    <input type="text" class="container-input-duvida" placeholder="CIDADE " id="cidade"> 
+                </div>
+                <div class="container-icone">
+                    <input type="text" class="container-input-duvida" placeholder="UF " id="uf"> 
+                </div>
             </div>
             <div class="container-icone">
-                
-                <input type="text" class="container-input-duvida" placeholder="UF " id="uf"> 
-            </div>
-            <div class="container-icone">
-                
                 <input type="text" class="container-input-duvida" placeholder="COMPLEMENTO ">
             </div>
             </div>
         </div>
 
-        <div id="btn-login">
-            Cadastro
+        <div id="btn-cadastro">
+            CADASTRAR
         </div>
-        <p class="txt-senha"><a>Esqueci a senha?</a></p> 
       </div>
       
       <!-- fim area de login -->

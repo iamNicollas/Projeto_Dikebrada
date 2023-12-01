@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding: 0;
@@ -98,8 +97,8 @@ body{
 }
 
 #container-area-login{
-    width: 1098px;
-    height: 704px;
+    width: 956px;
+    height: 673px;
     flex-shrink: 0;
     margin: 40px;
     border-radius: 25px;
@@ -132,171 +131,73 @@ h1{
     margin-bottom: 30px;
 }
 
-.txt-cadastro{
-    color: var(--cor-secundaria);
+.txt-login{
+    color: #000;
     font-family: Inter;
-    font-size: 20px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-align: justify;
-    width: 800px;
-    align-self: self-start;
-    margin-left: 40px;
+    width: 90%;
 }
 
-.container-icone{
-    height: 30px;
+#container-codigo-verificacao{
+    height: 117px;
+    width: 664px;
     display: flex;
-    flex-direction: row;
-    margin-left: 40px;
-    margin-top: 25px;
-    margin-bottom: 10px;
-}
-
-.container-icone > img{
-    height: 22.5px;
-    width: 22px;
-    margin-right: -30px; 
-    z-index: 10; 
-    margin-bottom: 5px;
-    
-}
-
-#container-conteudo{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-#contener-dados-cadastrais{
-    width: 485px;
-    height: 539px;
-
-}
-
-#container-endereço{
-    width: 481px;
-    height: 401px;
-
-}
-
-#container-pf-pj{
-    display: flex;
-    flex-direction: row;
+    align-self: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
     align-items: center;
-    justify-content: space-around;
-    height: 33px;
-    width: 424px;
-    margin-top: 15px;
-    align-self: self-start;
-    margin-left: 30px;
-    margin-bottom: 20px;
+    justify-content: center;
 }
 
-/* The switch - the box around the slider */
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 30px;
-  }
-  
-  /* Hide default HTML checkbox */
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  /* The slider */
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  input:checked + .slider {
-    background-color: #2196F3;
-  }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-  }
-  
-  input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
-
-
-.container-input-duvida{
-    height: 30px;
-    width: 418px;
-    border: 0;
-    border-bottom: 2px solid #CCC;
-    color: var(--cor-secundaria);
-    font-size: 18px;
+.codigo{
+    width: 88px;
+    height: 100px;
+    border-radius: 15px;
+    border: 1px solid #969090;
+    background: #FAFAFA;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #CCC;
+    font-family: Inter;
+    font-size: 96px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    padding-left: 40px;
-    outline: 0;
-    
-}
-#cidade{
-    width: 273px;
-}
-#uf{
-    width: 105.545px;
 }
 
-#btn-cadastro{
+
+
+#btn-login{
     width: 162px;
     height: 46px;
+    flex-shrink: 0;
     border-radius: 15px;
     border: 3px solid #696565;
     background: #FFF;
     text-align: center;
     padding: 9px;
-    align-self: self-end;
-    margin-top: -150px;
-    margin-right: 50px;
+    margin-top: 20px;
+    margin-left: 400px;
 }
 
-#btn-cadastro:hover{
+.txt-senha{
+    margin-left: 200px;
+}
+
+#btn-login:hover{
     cursor: pointer;
     background-color: var(--cor-secundaria);
     color: var(--cor-principal);
     border: 3px solid var(--cor-principal);
+}
+.txt-senha:hover{
+    cursor: pointer;
+    border-bottom: solid 1px var(--cor-secundaria);
 }
 
 @media only screen and (max-width:800px) {
@@ -304,7 +205,7 @@ h1{
         width: 350px;
         font-size: 18px;
     }
-    #btn-cadastro{
+    #btn-login{
         margin-right: 30px;
     }
 
@@ -312,4 +213,3 @@ h1{
         margin-right: 30px;
     }
 }
-

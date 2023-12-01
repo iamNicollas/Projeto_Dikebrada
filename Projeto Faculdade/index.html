@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="js/bannerRotativo.js" defer></script>
     <script src="js/modal.js" defer></script>
+    <script src="js/modal_conta.js" defer></script>
     <title>DiKebrada</title>
 </head>
 
@@ -28,10 +29,19 @@
             <div class="logo"></div>
             <!-- area login e favorito -->
             <div id="container-login-favorito">
-                <img src="img/UserOutline.png" alt="icon login">
-                <p style= "margin-left:-30px">LOGIN</p>
-                <img src="img/ChevronDownOutline.png" alt="" style= "margin-left:-30px">
-                <img src="img/Vector.png" alt="icon vetor">
+                <div onmouseover="showDropdown()" onmouseout="hideDropdown()" style="display: block;">
+                    <img src="img/UserOutline.png" alt="icon login" class="icon-login">
+                    <img src="img/ChevronDownOutline.png" alt="icon-seta-down" class="icon-seta-down">             
+                </div>
+                <div class="dropdown" id="dropdown" onmouseover="showDropdown()" onmouseout="hideDropdown()">
+                    <div class="triangle"></div>
+                    <ul>
+                        <li class="option-pedido"><a href="#">MEUS PEDIDOS</a></li>
+                        <li class="option-login"><a href="login/login.html">MINHA CONTA</a></li>
+                        <li class="option-cadastrar"> <a class="txt-cadastrar" href="#">CADASTRE-SE</a> </li>
+                    </ul>
+                </div>
+                <img src="img/Vector.png" alt="icon vetor" style="margin-top:15px; margin-left: -20px; ">
             </div>
         </div>
         
